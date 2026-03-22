@@ -13,7 +13,7 @@ import MovieCard from "./components/MovieCard";
 // This function fetches movies from backend.
 async function getMovies() {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLLIC_API_URL}/api/movies`, {
+    const res = await fetch("https://movie-ticket-backend-14t1.onrender.com/api/movies", {
       cache: "no-store",
     });
 
