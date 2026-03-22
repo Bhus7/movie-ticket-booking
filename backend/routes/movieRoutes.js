@@ -39,7 +39,6 @@ router.get("/:id", async (req, res) => {
 router.post("/", adminMiddleware, async (req, res) => {
   const { title, genre, duration, poster_url, description } = req.body;
 
-  // This checks if required fields are missing.
   if (!title || !genre || !duration || !poster_url || !description) {
     return res.status(400).json({ message: "All fields are required" });
   }
@@ -65,7 +64,6 @@ router.put("/:id", adminMiddleware, async (req, res) => {
   const { id } = req.params;
   const { title, genre, duration, poster_url, description } = req.body;
 
-  // This checks if required fields are missing.
   if (!title || !genre || !duration || !poster_url || !description) {
     return res.status(400).json({ message: "All fields are required" });
   }
