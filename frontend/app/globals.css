@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* This sets global background and text colors for the website. */
+:root {
+  --background: #0b0b0f;
+  --foreground: #ffffff;
+}
+
+/* This resets margin and padding for all elements. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This applies styles to the whole body of the page. */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* This removes underline from all links. */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* This makes images responsive across the website. */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* This styles section headings like movie category titles. */
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/* This creates a container class for centered page layout. */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
